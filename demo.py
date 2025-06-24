@@ -22,3 +22,7 @@ dbcursor.execute("select name from world.city")
 for cityname in dbcursor:
     print(cityname)
 
+dbcursor.execute("select name, population from world.country")
+for(c , p) in dbcursor:
+    print(c , p)
+
