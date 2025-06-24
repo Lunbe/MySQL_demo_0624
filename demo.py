@@ -19,3 +19,6 @@ print("記得開權限") #就是在MYSQLworkbench中跑程式的內容
 
 dbcursor.execute("select name from world.city")
 
+for cityname in dbcursor:
+    print(cityname)
+
